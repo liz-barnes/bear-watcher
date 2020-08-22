@@ -19,15 +19,14 @@ const buildBearForm = () => {
 }
 
 const resetForm = () => {
-    $('#inputBearImage').html("");
-    $('#inputBearName').html("");
+    $('#inputBearImage').val("");
+    $('#inputBearName').val("");
 }
 
 const getBearInfo = () => {
     $('#btnTrackBear').on('click',() => {
         const inputImage = $('#inputBearImage').val();
         const inputName = $('#inputBearName').val();
-
         bears.push({
             bearImage: inputImage,
             bearName: inputName
