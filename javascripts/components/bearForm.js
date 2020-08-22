@@ -5,15 +5,17 @@ let bears = [];
 const buildBearForm = () => {
     $('#containerBearForm').html(`
         <form>
-            <div class="form-group">
-                <label for="bearImage">Image URL: </label>
-                <input type="url" class="form-control" id="inputBearImage">
+            <div class="text-center">
+                <div class="form-inline pb-4 ml-4">
+                    <label for="bearImage" class="pr-2"><b>Image URL:</b> </label>
+                    <input type="url" class="form-control w-75" id="inputBearImage" placeholder="Enter Image URL">
+                </div>
+                <div class="form-inline pb-4 ml-4">
+                    <label for="bearImage" class="pr-2"><b>Bear Name:</b> </label>
+                    <input type="text" class="form-control w-75" id="inputBearName" placeholder="Example: Yogi">
+                </div>
+                <button type="button" class="btn btn-primary" id="btnTrackBear">Track my bear!</button>
             </div>
-            <div class="form-group">
-                <label for="bearImage">Bear Name: </label>
-                <input type="text" class="form-control" id="inputBearName">
-            </div>
-            <button type="button" class="btn btn-primary" id="btnTrackBear">Track my bear!</button>
         </form>
         `);
 }

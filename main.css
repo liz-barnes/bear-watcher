@@ -1,3 +1,17 @@
 body {
     background-color: peru;
 }
+
+#containerBearForm {
+    margin: auto;
+    margin-top: 50px;
+    width: 75%;
+    padding: 25px;
+    border: black 2px solid;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .5);
+}
+
+#btnTrackBear {
+    margin: 50px 0px 25px 0px;
+    width: 35%;
+}
