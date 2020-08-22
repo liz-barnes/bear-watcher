@@ -1,24 +1,42 @@
+import { buildBearCards } from './../components/river.js';
+
+let bears = [];
+
 const buildBearForm = () => {
-    // $('#bearForm').html("");
-    // $('#bearForm').addClass('containerBearForm')
-    $('#bearForm').html(`
+    $('#containerBearForm').html(`
         <form>
             <div class="form-group">
-                <label for="bearImage">Image URL</label>
-                <input type="url" class="form-control" id="imageBear" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="bearImage">Image URL: </label>
+                <input type="url" class="form-control" id="inputBearImage">
             </div>
             <div class="form-group">
-                <label for="bearImage">Image URL</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="bearImage">Bear Name: </label>
+                <input type="text" class="form-control" id="inputBearName">
             </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" id="btnTrackBear">Track my bear!</button>
         </form>
         `);
 }
 
-export { buildBearForm }
+const resetForm = () => {
+    $('#inputBearImage').html("");
+    $('#inputBearName').html("");
+}
+
+const getBearInfo = () => {
+    $('#btnTrackBear').on('click',() => {
+        const inputImage = $('#inputBearImage').val();
+        const inputName = $('#inputBearName').val();
+
+        bears.push({
+            bearImage: inputImage,
+            bearName: inputName
+        })
+
+        console.log(bears);
+        resetForm();
+        buildBearCards(bears);
+})
+}
+
+export { buildBearForm, getBearInfo }

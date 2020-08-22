@@ -1,7 +1,8 @@
-import { buildBearForm } from './components/bearForm.js';
+import { buildBearForm, getBearInfo } from './components/bearForm.js';
 
 const init = () => {
     buildBearForm();
+    getBearInfo();
 }
 
 init();
