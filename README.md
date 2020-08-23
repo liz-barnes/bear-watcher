@@ -8,4 +8,4 @@ You see a photo of a bear online and you want to know how it lives it life. Inpu
 ![](http://g.recordit.co/9OI4LassSC.gif)
 
 ## How magic was made
-The form and bear cards were made possible by Boostrap components. Jquery methods were used to make this site functional.
+The form and bear cards were made possible by Boostrap components. Jquery methods and event listeners were used to make the form and button functional.
