@@ -2,7 +2,7 @@
 > This application allows users to track a bear that they see out in the wild!
 
 ## User experience
-You see a photo of a bear online and you want to know how it lives it life. Upload the URL to the form and give your bear a name- we will do the rest!
+You see a photo of a bear online and you want to know how it lives it life. Input the URL of the image to the form and give your bear a name. Your bear will now be tracked on this application!
 
 ## Demo
 
