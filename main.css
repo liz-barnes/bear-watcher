@@ -1,3 +1,49 @@
 body {
-    background-color: peru;
+    background-color: #3D504F;
+    color: #3D504F;
+}
+
+#containerBearForm {
+    margin: auto;
+    margin-top: 50px;
+    width: 650px;
+    padding: 25px;
+    border-radius: 2px;
+    /* border: black 2px solid; */
+    box-shadow: 5px 5px 2px 1px #f8f9f94d;
+    background-color: #F8F9F9;
+}
+
+#btnTrackBear {
+    margin: 50px 0px 25px 0px;
+    width: 200px;
+    background-color: #C1B196;
+    border: #758191 1px solid;
+    color: #F8F9F9; 
+}
+
+.form-control {
+    background-color: #F8F9F9;
+    border: #758191 1px solid;
+}
+
+#containerBearCards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    /* margin: auto;
+    display: flex;
+    flex-flow: row wrap; */
+    /* width: 1250px; */
+}
+
+.card {
+    border-radius: 2px;
+    background-color: #C1B196;
+    box-shadow: 5px 5px 2px 1px #f8f9f94d;
+}
+
+#containerImage {
+    padding: 15px;
 }
